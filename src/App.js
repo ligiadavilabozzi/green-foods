@@ -104,7 +104,7 @@ function App() {
     setCategories([...categories]) 
     
   }
-  
+
   return (
     <>
       <Header />
@@ -112,7 +112,7 @@ function App() {
         <Category category={category} changeQuantity={changeQuantity} />
       ))}
 
-      <CloseOrder />
+      <CloseOrder categories={categories} />
     </>
   );
 }
