@@ -1,9 +1,12 @@
+import ReactDom from "react-dom";
+import React from "react";
+
 import Category from "./components/Category";
 import CloseOrder from "./components/CloseOrder";
 import Header from "./components/Header";
 
 
-const categories = [
+const initialCategories = [
   {
     title: 'Primeiro, escolha o seu prato',
     products: [
@@ -93,13 +96,20 @@ const categories = [
   }
 ]
 
-
 function App() {
+  const [categories, setCategories] = React.useState(initialCategories); 
+
+  function changeQuantity(product, newQuantity){
+    product.quantity = newQuantity; 
+    setCategories([...categories]) 
+    
+  }
+  
   return (
     <>
       <Header />
       {categories.map(category => (
-        <Category category={category} />
+        <Category category={category} changeQuantity={changeQuantity} />
       ))}
 
       <CloseOrder />
