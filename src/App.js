@@ -9,6 +9,7 @@ import Header from "./components/Header";
 const initialCategories = [
   {
     title: 'Primeiro, escolha o seu prato',
+    type: 'Prato',
     products: [
       {
         id: 1,
@@ -38,6 +39,7 @@ const initialCategories = [
   },
   {
     title: 'Agora, escolha a sua bebida',
+    type: 'Bebida',
     products: [
       {
         id: 4,
@@ -67,6 +69,7 @@ const initialCategories = [
   },
   {
     title: 'Para finalizar, a sobremesa',
+    type: 'Sobremesa',
     products: [
       {
         id: 7,
