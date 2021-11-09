@@ -19,7 +19,6 @@ export default function CloseOrder(props) {
 
         const textWhats = encodeURIComponent(message)
         window.location.href = `https://wa.me/5511986927292?text=${textWhats}`
-
  
     }
 
