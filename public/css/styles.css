@@ -1,0 +1,159 @@
+body {
+  font-family: "Roboto", sans-serif;
+  color: #333;
+  background: #eeeeee;
+  padding-top: 150px;
+  padding-bottom: 100px;
+}
+
+.header {
+  background: #2f9c38;
+  padding-left: 20px;
+  color: #fff;
+  box-shadow: 0 0 5px 5px rgb(0 0 0 / 30%);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  align-items: center;
+}
+
+.text-header{
+  margin-right:10px
+}
+
+.subtitle {
+  margin-top: 0;
+  margin-right: 20px;
+}
+
+.subtitle {
+  margin-top: 0;
+  margin-right: 10px;
+}
+
+.header img {
+  max-width: 80px;
+  width: auto;
+  height: auto;
+  margin-left: 0;
+  margin-right: 30px;
+  padding-right: 10px;
+}
+
+h1 {
+  font-size: 36px;
+  font-family: "Quicksand", cursive;
+  margin-bottom: 0;
+  font-weight: 600;
+  letter-spacing: 2px;
+  margin-top:15px
+}
+
+h3 {
+  font-family: "Quicksand", cursive;
+  font-size: 20px;
+  margin: 5px 25px 0px 15px;
+  color: #0e3a11;
+  letter-spacing: 2px;
+}
+
+.list {
+  display: flex;
+  flex-wrap: nowrap;
+  padding: 0px 10px 20px 10px;
+  overflow: scroll;
+}
+
+.option {
+  flex-shrink: 0;
+  width: 150px;
+  border-radius: 10px;
+  box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.1);
+  background: #fff;
+  margin-right: 20px;
+  border: 5px solid transparent;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.option .quantity {
+  display: none;
+}
+
+.option .selected {
+  border: 5px solid green;
+}
+
+.option .selected .quantity {
+  display: block;
+}
+
+.option img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.option h4 {
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+.option .description {
+  font-weight: 100;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.close-order {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #fff;
+  padding: 10px 0px 10px 0px;
+  box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+.close-order button {
+  display: block;
+  width: 100%;
+  padding: 10px 0;
+  background: #cbcbcb;
+  color: #fff;
+  border-radius: 30px;
+  text-align: center;
+  border: 0;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+
+.close-order button.able {
+  background: #2f9c38;
+}
+
+.details {
+  display: flex;
+  justify-content: space-between;
+}
+
+.details button {
+  background: none;
+  border: none;
+  font-weight: bold;
+  outline: none;
+  cursor: pointer;
+}
+
+.details .add {
+  color: green;
+}
+
+.details .remove {
+  color: red;
+}
