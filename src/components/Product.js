@@ -11,6 +11,7 @@ export default function Product(props) {
         }
     }
 
+
     return (
         <>
             <li className={quantity > 0 ? 'option selected' : 'option'} onClick={selectItem}>
