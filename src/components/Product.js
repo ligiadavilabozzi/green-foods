@@ -7,13 +7,15 @@ export default function Product(props) {
                 <h4>{product.name}</h4>
                 <p className='description'>{product.description}</p>
 
-                <p className='price'>R$ {product.price.toFixed(2)}</p>
-                <div className='quantity'>
-                    <button className='add'>-</button>
-                    <span>{product.quantity}</span>
-                    <button className='remove'>+</button>
+                <p className='price'>R$ {product.price.toFixed(2)}
+                    <div className='quantity'>
+                        <button className='add'>-</button>
+                        <span>{product.quantity}</span>
+                        <button className='remove'>+</button>
+                    </div>
+                </p>
 
-                </div>
+
             </li>
         </>
     )
