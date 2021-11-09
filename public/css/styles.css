@@ -85,11 +85,11 @@ h3 {
   display: none;
 }
 
-.option .selected {
+.option.selected {
   border: 5px solid green;
 }
 
-.option .selected .quantity {
+.option.selected .quantity {
   display: block;
 }
 
@@ -137,12 +137,12 @@ h3 {
   background: #2f9c38;
 }
 
-.details {
+.quantity {
   display: flex;
   justify-content: space-between;
 }
 
-.details button {
+.quantity button {
   background: none;
   border: none;
   font-weight: bold;
@@ -150,10 +150,10 @@ h3 {
   cursor: pointer;
 }
 
-.details .add {
+.quantity .add {
   color: green;
 }
 
-.details .remove {
+.quantity .remove {
   color: red;
 }

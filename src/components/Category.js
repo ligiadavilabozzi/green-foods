@@ -1,24 +1,26 @@
-import Product from "./Product";
-
-export default function Category() {
+export default function Category(props) {
+    const { category } = props
     return (
         <>
-            <h3>Primeiro, escolha o seu prato</h3>
+            <h3>{category.title}</h3>
             <ul className="list">
-                <Product />
-            </ul>
+                {category.products.map(product => (
+                    <li class="option selected">
+                        <img src={product.imgUrl} />
+                        <h4>{product.name}</h4>
+                        <p className='description'>{product.description}</p>
 
-            <h3>Agora, escolha a sua bebida</h3>
+                        <p className='price'>R$ {product.price.toFixed(2)}</p>
+                        <div className='quantity'>
+                            <button className='add'>-</button>
+                            <span>{product.quantity}</span>
+                            <button className='remove'>+</button>
 
-            <ul className="list">
-                <Product />
-            </ul>
-
-            <h3>Por fim, a desejada sobremesa</h3>
-
-            <ul className="list">
-                <Product />
+                        </div>
+                    </li>
+                ))}
             </ul>
         </>
+
     )
 }
