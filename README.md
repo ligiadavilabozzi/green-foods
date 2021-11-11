@@ -10,12 +10,12 @@ This application consists of:
 
 The idea is to have a combo with at least one food, one drink and one dessert. The 'check order' button is only activated if you have at least one combo with one item from each category. 
 
-![first.png](Green%20Foods%20ac3fc3bedbea48868f07285765e5faa5/first.png)
+![first.png](https://github.com/ligiadavilabozzi/green-foods/blob/main/public/images/first.png)
 
-![second.png](Green%20Foods%20ac3fc3bedbea48868f07285765e5faa5/second.png)
+![second.png](https://github.com/ligiadavilabozzi/green-foods/blob/main/public/images/second.png)
 
 
-👩🏻‍💻 ## Available Scripts
+## 👩🏻‍💻 Available Scripts
 
 In the project directory, you can run:
 
