@@ -7,7 +7,7 @@ export default function Category(props) {
             <h3>{category.title}</h3>
             <ul className="list">
                 {category.products.map(product => (
-                  <Product product={product} changeQuantity={changeQuantity}/>
+                    <Product product={product} changeQuantity={changeQuantity} />
                 ))}
             </ul>
         </>

@@ -1,5 +1,3 @@
-import React from 'react';
-
 export default function Product(props) {
 
     const { product, changeQuantity } = props
@@ -20,9 +18,23 @@ export default function Product(props) {
                 <p className='description'>{description}</p>
                 <p className='price'>R$ {price.toFixed(2)}
                     <div className='quantity'>
-                        <button className='remove' onClick={() => changeQuantity(product, quantity - 1)}>-</button>
+
+                        <button
+                            className='remove'
+                            onClick={(e) => {
+                                changeQuantity(product, quantity - 1)
+                                e.stopPropagation();
+                            }}>
+                            -
+                        </button>
+
                         <span>{quantity}</span>
-                        <button className='add' onClick={() => changeQuantity(product, quantity + 1)}>+</button>
+                        <button className='add' onClick={(e) => {
+                            changeQuantity(product, quantity + 1)
+                            e.stopPropagation();
+                        }}>
+                            +
+                        </button>
                     </div>
                 </p>
 

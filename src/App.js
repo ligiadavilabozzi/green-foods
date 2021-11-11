@@ -1,5 +1,5 @@
 import ReactDom from "react-dom";
-import React from "react";
+import {React, useState} from "react";
 
 import Category from "./components/Category";
 import CloseOrder from "./components/CloseOrder";
@@ -99,7 +99,7 @@ const initialCategories = [
 ]
 
 function App() {
-  const [categories, setCategories] = React.useState(initialCategories); 
+  const [categories, setCategories] = useState(initialCategories); 
 
   function changeQuantity(product, newQuantity){
     product.quantity = newQuantity; 
